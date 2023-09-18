@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title title1">title 1</div>
+        <div class="accordion-content content1">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a
+            rerum vero, praesentium vel officia, voluptatum quos repellat, vitae
+            laborum ad eius repudiandae! Pariatur saepe assumenda maxime sed, ex
+            repellendus?
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title title2">title 2</div>
+        <div class="accordion-content content2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ad
+            commodi recusandae in eligendi enim sed cum culpa animi, corrupti
+            minima voluptatibus? Quaerat quis, quas excepturi quae quo fugit
+            provident?
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title title3">title 3</div>
+        <div class="accordion-content content3">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus non
+            numquam dolorem repudiandae, ea reiciendis nobis illum soluta at
+            cumque mollitia ipsa distinctio labore iste asperiores eius neque
+            esse sequi!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+        // let accordion = document.querySelectorAll('.accordion-content')
+        // let title = document.querySelectorAll('.accordion-title')
+        // console.log('accordion:>>', accordion);
+        // console.log('title:>>', title);
+        // for (let i=0; i<accordion.length; i++) {
+        //     const element = accordion [i];
+        //     console.log ('element:>>', element);
+        // }
+        // // let contentAll = document.querySelectorAll('.accordion-content')
+        // // console.log('contentAll:>>', contentAll);
+        // // for (let i=0; i<contentAll.length; i++) {
+        // //     const element = contentAll [i];
+        // //     console.log ('element:>>', element);
+        // // }
+        // title.onclick = function () {
+        //     accordion.classList.toggle('active')
+        // }
+    let accordionTitle1 = document.querySelector('.accordion-title.title1')
+    let accordionTitle2 = document.querySelector('.accordion-title.title2')
+    let accordionTitle3 = document.querySelector('.accordion-title.title3')
+    // console.log('accordionTitle1:>>', accordionTitle1);
+    // console.log('accordionTitle2:>>', accordionTitle2);
+    // console.log('accordionTitle3:>>', accordionTitle3);
+
+    let content1 = document.querySelector('.accordion-content.content1')
+    let content2 = document.querySelector('.accordion-content.content2')
+    let content3 = document.querySelector('.accordion-content.content3')
+
+    console.log('accordionTitle1:>>', content1);
+    console.log('accordionTitle2:>>', content2);
+    console.log('accordionTitle3:>>', content3);
+
+    accordionTitle1.onclick = function () {
+        content1.classList.toggle('active')
+    }
+    accordionTitle2.onclick = function () {
+        content2.classList.toggle('active')
+    }
+    accordionTitle3.onclick = function () {
+        content3.classList.toggle('active')
+    }
+    </script>
+  </body>
+</html>
